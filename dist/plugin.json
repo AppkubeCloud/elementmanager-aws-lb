@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "app",
+  "name": "Element manager",
+  "id": "elementmanager-aws-lb",
+  "info": {
+    "description": "Element manager",
+    "author": {
+      "name": "Synectiks"
+    },
+    "logos": {
+      "small": "img/element_logo.svg",
+      "large": "img/element_logo.svg"
+    },
+    "screenshots": [],
+    "version": "1.0.0",
+    "updated": "2023-04-19"
+  },
+  "includes": [
+    {
+      "type": "page",
+      "name": "Dashboard",
+      "addToNav": false,
+      "defaultNav": false,
+      "role": "Admin",
+      "path": "/a/elementmanager-aws-lb"
+    }
+  ],
+  "dependencies": {
+    "grafanaDependency": ">=8.0.0",
+    "plugins": []
+  }
+}
